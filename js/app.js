@@ -238,23 +238,23 @@ function copyToClipboard(elementId) {
 
 /* ================ Enviar Formulário Para Email ================ */
 
-const form = document.querySelector(".contatos-form")
+// const form = document.querySelector(".contatos-form")
 
-function enviarMsg(e){
-    e.preventDefault()
-    const name = document.querySelector(".input-form-name"),
-          email = document.querySelector(".input-form-email"),
-          msg = document.querySelector(".input-form-msg");
+// function enviarMsg(e){
+//     e.preventDefault()
+//     const name = document.querySelector(".input-form-name"),
+//           email = document.querySelector(".input-form-email"),
+//           msg = document.querySelector(".input-form-msg");
 
-    Email.send({
-        SecureToken : "13fdbb8c-957d-48c6-8f77-251093c61ddb",
-        To : 'leo.pereira.cortes@gmail.com',
-        From : email.value,
-        Subject : "Novo contato profissional",
-        Body : "Nome: " + name.value + "<br>Mensagem: " + msg.value
-    }).then(
-    message => alert("Mensagem enviada com sucesso!")
-    );
-}
+//     Email.send({
+//         SecureToken : "13fdbb8c-957d-48c6-8f77-251093c61ddb",
+//         To : 'leo.pereira.cortes@gmail.com',
+//         From : email.value,
+//         Subject : "Novo contato profissional",
+//         Body : "Nome: " + name.value + "<br>Mensagem: " + msg.value
+//     }).then(
+//     message => alert("Mensagem enviada com sucesso!")
+//     );
+// }
 
-form.addEventListener("submit", enviarMsg)
+// form.addEventListener("submit", enviarMsg)
