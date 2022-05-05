@@ -247,7 +247,7 @@ function enviarMsg(e){
           msg = document.querySelector(".input-form-msg");
 
     Email.send({
-        SecureToken : "b4cdbc50-00bc-4f25-8386-d8d9dab08089",
+        SecureToken : "13fdbb8c-957d-48c6-8f77-251093c61ddb",
         To : 'leo.pereira.cortes@gmail.com',
         From : email.value,
         Subject : "Novo contato profissional",
