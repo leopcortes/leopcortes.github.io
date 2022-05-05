@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projeto App Matrícula | LPC </title>
+    <!-- ========== Animação Scroll Reveal ========== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header> <!-- Cabeçalho (nav bar e logo) -->
+        <nav class="container">
+            <a href="#" class="logo">LP<span>C.</span></a>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="../index.html" class="nav-link">Início</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#sobremim" class="nav-link">Sobre Mim</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#conhecimentos" class="nav-link">Conhecimentos</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#projetos" class="nav-link">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#contatos" class="nav-link">Contatos</a>
+                    </li>
+                </ul>
+                <i class="uil uil-moon toggle-btn"></i>
+            </div>
+            <div class="hamburguer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main> <!-- Parte principal -->
+        
+        <div class="conhecimento"></div> <!-- Mudar Tema (claro/escuro) --> 
+        
+        <section class="projetoappmatricula section" id="appmatricula"> <!-- Projeto App Matricula em Disciplinas --> 
+            <img src="../assets/square1.png" class="forma quadrado" alt="">
+            <div class="container">
+                <div class="projetoappmatricula-informacoes">
+                    <h3 class="sub-titulo">Projeto para universidade</h3>
+                    <h1 class="titulo">Aplicativo Matrícula de Alunos de Graduação</h1>
+                    <p class="texto" align="justify">
+                        Projeto onde foi criado um aplicativo que facilita o processo de matricula em disciplinas na universidade. Feito em Ionic Angular o aplicativo mostra as disciplinas ofertadas e turmas disponíveis e apos um aluno selecionar a matéria desejada o programa verifica a disponibilidade de acordo com diversos fatores (aluno é do curso, vagas ofertadas e ocupadas, pré-requisitos etc) e realiza a matrícula do aluno.
+                    </p>
+                    <div class="cta">
+                        <a href="https://github.com/leopcortes/app-matricula-disciplinas/tree/master" target="_blank" class="btn">GitHub</a>
+                        <a href="../assets/ProjetoMDS_v5.pdf" target="_blank" class="btn secondary-btn">Modelo de Entidade</a>
+                    </div>
+                </div>
+                <div class="projetoappmatricula-imagem">
+                    <img src="../assets/projetoapp.png" class="projetoapp" alt="">
+                    <img src="../assets/circle1.png" class="forma circulo" alt="">
+                    <img src="../assets/dots.png" class="forma pontos" alt="">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer> <!-- Rodapé (logo, copyright e redes sociais) -->
+        <div class="container">
+            <a href="#" class="logo">LP<span>C.</span></a>
+            <p class="texto">&copy; Copyright 2022. Todos os diretos reservados.</p>
+            <ul class="redes-sociais">
+                <li>
+                    <a href="https://github.com/leopcortes" target="_blank" class="links-redes">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/leonardo-c%C3%B4rtes-a789a91bb/" target="_blank" class="links-redes">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/leop.cortes/?hl=pt-br" target="_blank" class="links-redes">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/leonardopcortes" target="_blank" class="links-redes">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <p id="p1">(61)991164633</p>
+                    <a onclick="copyToClipboard('p1')" class="links-redes">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <p id="p2">leop#3838</p>
+                    <a onclick="copyToClipboard('p2')" class="links-redes">
+                        <i class="uil uil-discord"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
