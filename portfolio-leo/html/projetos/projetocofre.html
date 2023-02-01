@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projeto cofre | LPC </title>
+    <!-- ========== Animação Scroll Reveal ========== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../../css/estilo-portfolio.css">
+    <link rel="icon" href="../../../assets/iconlpc.jpg">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header> <!-- Cabeçalho (nav bar e logo) -->
+        <nav class="container">
+            <a href="../../portfolio.html" class="logo"><span>L</span>PC.</a>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="../../portfolio.html" class="nav-link">Início</a>
+                    </li>
+                    <li>
+                        <a href="../../portfolio.html#sobremim" class="nav-link">Sobre Mim</a>
+                    </li>
+                    <li>
+                        <a href="../../portfolio.html#conhecimentos" class="nav-link">Conhecimentos</a>
+                    </li>
+                    <li>
+                        <a href="../../portfolio.html#projetos" class="nav-link">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="../../portfolio.html#contatos" class="nav-link">Contatos</a>
+                    </li>
+                </ul>
+                <i class="uil uil-moon toggle-btn"></i>
+            </div>
+            <div class="hamburguer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main> <!-- Parte principal -->
+        
+        <div class="conhecimento"></div> <!-- Mudar Tema (claro/escuro) --> 
+        
+        <section class="projetocofreautomatico section" id="cofre"> <!-- Projeto cofre Automático --> 
+            <div class="container">
+                <div class="projetocofreautomatico-informacoes">
+                    <h3 class="sub-titulo">Projeto para universidade</h3>
+                    <h1 class="titulo">Cofre Automático</h1>
+                    <p class="texto" align="justify">
+                        Projeto para universidade onde usando uma placa arduino uno, um servo motor, um LCD com módulo I2C, 5 botões, um buzzer e um módulo wifi ESP8266. O sistema foi montado em uma caixa de sapato e pode armazenar qualquer objeto de pequeno porte. A programação embarcada foi feita em C++.
+                    </p>
+                    <div class="cta cta-projetos">
+                        <a href="https://github.com/leopcortes/projeto-cofre" target="_blank" class="btn">GitHub</a>
+                        <a href="https://youtube.com/shorts/Ff2O-3u-IsE?feature=share" target="_blank" class="btn secondary-btn">Vídeo</a>
+                    </div>
+                </div>
+                <div class="projetocofreautomatico-imagem">
+                    <img src="../../../assets/projetocofre.jpg" class="projetocofre" alt="">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer> <!-- Rodapé (logo, copyright e redes sociais) -->
+        <div class="container">
+            <a href="../../portfolio.html" class="logo"><span>L</span>PC.</a>
+            <p class="texto">&copy; Copyright 2022. Todos os diretos reservados.</p>
+            <ul class="redes-sociais">
+                <li>
+                    <a href="https://github.com/leopcortes" target="_blank" class="links-redes">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/leonardo-c%C3%B4rtes-a789a91bb/" target="_blank" class="links-redes">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/leop.cortes/?hl=pt-br" target="_blank" class="links-redes">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/leonardopcortes" target="_blank" class="links-redes">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <p id="p1">(61)991164633</p>
+                    <a onclick="copyToClipboard('p1')" class="links-redes">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <p id="p2">leop#3838</p>
+                    <a onclick="copyToClipboard('p2')" class="links-redes">
+                        <i class="uil uil-discord"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- ========== JavaScript ========== -->
+    <script src="../../js/portfolio.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+@font-face {
+   font-family: 'Hauora ExtraBold';
+   src: url('../assets/fonts/ttf/Hauora-ExtraBold.ttf');
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   -webkit-tap-highlight-color: transparent;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+html, body #fullheight {
+   min-height: 100% !important;
+   height: 100%;
+   font-family: 'Hauora ExtraBold', Arial, Helvetica, sans-serif;
+   background-color: rgb(33, 33, 33); 
+   color: white;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(15, 15, 15);
+}
+
+.espaco{
+   height: 1000px;
+   color: rgb(15, 15, 15);
+}
+
+/* ========== Nome ========== */
+
+.nome {
+   /* position: absolute; */
+   width: 653px;
+   font-size: 120px;
+   line-height: 120px;
+   text-transform: uppercase;
+   margin: 0 auto;
+}
+
+.nome span {
+   display: inline-block;
+   line-height: 96px;
+   vertical-align: middle;
+}
+
+.nome span:hover {
+   text-shadow: 0 0 15px #fff;
+   transition: 0.3s;
+}
+
+.nome span:not(:hover) {
+   transition: 2s;
+}
+
+.sobrenome {
+   width: 653px;
+   font-size: 77px;
+   line-height: 85px;
+   text-transform: uppercase;
+   margin: 0 auto;
+   padding-left: 7px;
+   transition: 0.5s;
+}
+
+.sobrenome span {
+   display: inline-block;
+   line-height: 80px;
+   vertical-align: middle;
+}
+
+.sobrenome span:hover {
+   text-shadow: 0 0 12px #fff;
+   transition: 0.3s;
+}
+
+.sobrenome span:not(:hover) {
+   transition: 2s;
+}
+
+/* ========== Botões ========== */
+
+.area-portfolio {
+   padding: 10px;
+}
+
+.area-calculadora {
+   padding: 10px;
+}
+
+.botao {
+   position: relative;
+   display: inline-block;
+   width: 620px;
+   height: 70px;
+   padding: 10px;
+   margin: 0 auto;
+   font-size: 40px;
+   line-height: 40px;
+   letter-spacing: 1.5px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 0.7);
+   background-color: #222222;
+   -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+   box-shadow: 0 0 7px rgb(7, 7, 7);
+   border: none;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+}
+
+.botao:hover {
+   color: rgba(255, 255, 255, 1);
+}
+
+.botao:active {
+   background-color: #474a5c;
+   box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+   transform: translateY(2px);
+}
+
+a span {
+   display: block;
+   position: absolute;
+   background: white;
+}
+
+a span:nth-child(1) {
+   left: 0;
+   bottom: 0;
+   width: 4px;
+   height: 100%;
+   transform: scaleY(0);
+   transform-origin: top;
+   transition: transform 0.5s;
+}
+
+a:hover span:nth-child(1) {
+   transform: scaleY(1);
+   transform-origin: bottom;
+   transition: transform 0.5s;
+}
+
+a span:nth-child(2) {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 4px;
+   transform: scaleX(0);
+   transform-origin: right;
+   transition: transform 0.5s;
+}
+
+a:hover span:nth-child(2) {
+   transform: scaleX(1);
+   transform-origin: left;
+   transition: transform 0.5s;
+}
+
+a span:nth-child(3) {
+   right: 0;
+   bottom: 0;
+   width: 4px;
+   height: 100%;
+   transform: scaleY(0);
+   transform-origin: top;
+   transition: transform 0.5s;
+   transition-delay: 0.5s;
+}
+
+a:hover span:nth-child(3) {
+   transform: scaleY(1);
+   transform-origin: bottom;
+   transition: transform 0.5s;
+   transition-delay: 0.5s;
+}
+
+a span:nth-child(4) {
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 4px;
+   transform: scaleX(0);
+   transform-origin: right;
+   transition: transform 0.5s;
+   transition-delay: 0.5s;
+}
+
+a:hover span:nth-child(4) {
+   transform: scaleX(1);
+   transform-origin: left;
+   transition: transform 0.5s;
+   transition-delay: 0.5s;
+}
+
+.portfolio {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 43px;
+   background-color: hsl(166, 83%, 41%);
+}
+
+.portfolio:active {
+   background-color: hsl(166, 71%, 25%);
+}
+
+.calculadora {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #606582;
+}
+
+@media (max-width: 660px) {
+   .nome {
+      width: 430px;
+      font-size: 79px;
+      line-height: 79px;
+   }
+   
+   .sobrenome {
+      width: 430px;
+      font-size: 50px;
+      line-height: 50px;
+   }
+
+   .botao {
+      width: 400px;
+      height: 50px;
+      font-size: 28px;
+      line-height: 28px;
+   }
+   
+   .portfolio {
+      font-size: 32px;
+      line-height: 32px;
+   }
+
+   .area-calculadora {
+      padding: 0;
+   }
+}
+
+@media (max-width: 440px) {
+   .nome {
+      width: 380px;
+      font-size: 69px;
+      line-height: 69px;
+   }
+   
+   .sobrenome {
+      width: 380px;
+      font-size: 44px;
+      line-height: 44px;
+   }
+
+   .botao {
+      width: 349px;
+      height: 50px;
+      font-size: 28px;
+      line-height: 28px;
+   }
+   
+   .portfolio {
+      font-size: 32px;
+      line-height: 32px;
+   }
+
+   .calculadora {
+      font-size: 24px;
+   }
+
+   .area-calculadora {
+      padding: 0;
+   }
+}
+
+@media (max-width: 390px) {
+   .nome {
+      width: 90%;
+      font-size: 50px;
+      line-height: 50px;
+      padding-left: 20px;
+   }
+   
+   .sobrenome {
+      width: 90%;
+      font-size: 31px;
+      line-height: 31px;
+      padding-left: 20px;
+   }
+
+   .botao {
+      width: 280px;
+      height: 50px;
+      font-size: 28px;
+      line-height: 28px;
+   }
+   
+   .portfolio {
+      font-size: 26px;
+      line-height: 26px;
+   }
+
+   .calculadora {
+      font-size: 18px;
+   }
+
+   .area-calculadora {
+      padding: 0;
+   }
+}
