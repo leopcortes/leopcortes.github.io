@@ -250,61 +250,6 @@ function calcularSistema() {
     console.log("X final = " + eq1[4] + "; Y final = " + eq2[4] + "; Z final = " + eq3[4])
 }
 
-/* =========== Calculadora IMC =========== */
-
-function calcularIMC() {
-    
-    /* ========== Associação HTML -> JS ========== */
-
-    var altura = document.getElementById("alturaimc").value
-    var peso = document.getElementById("pesoimc").value
-
-    /* ========== Cálculo ========== */
-
-    var imccalculado = 0
-    var imcclassificacao = ""
-
-    if(altura == "" || peso == "") {
-        document.getElementById("imccalculado").innerHTML = "ERRO"
-        document.getElementById("imcclassificacao").innerHTML = "ERRO"
-    } else {
-        altura = parseFloat(altura)
-        peso = parseFloat(peso)
-
-        imccalculado = (peso)/(altura * altura)
-
-        if(imccalculado < 18.5){
-            imcclassificacao = "MAGREZA"
-            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
-        } else if(imccalculado >= 18.5 && imccalculado <= 24.9) {
-            imcclassificacao = "NORMAL"
-            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
-        } else if(imccalculado >= 25 && imccalculado <= 29.9) {
-            imcclassificacao = "SOBREPESO"
-            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
-        } else if(imccalculado >= 30 && imccalculado <= 39.9) {
-            imcclassificacao = "OBESIDADE"
-            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
-        } else if(imccalculado > 40) {
-            imcclassificacao = "OBESIDADE GRAVE"
-            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
-        } else {
-            document.getElementById("imcclassificacao").innerHTML = "ERRO"
-        }
-        document.getElementById("imccalculado").innerHTML = imccalculado.toFixed(1)
-    }
-
-    /* ========== Impressão ========== */
-
-    console.log("imccalculado = " + imccalculado + " (" + typeof imccalculado + ")")
-    console.log("imcclassificacao = " + imcclassificacao + " (" + typeof imcclassificacao + ")")
-}
-
-function apagarIMC() {
-    document.getElementById('alturaimc').value = ''
-    document.getElementById('pesoimc').value = ''
-}
-
 /* =========== Calculadora Código de Cores Resistores =========== */
 
 function calcularCodigoCores(){
@@ -504,4 +449,121 @@ function calcularCodigoCores(){
         document.getElementById("valorResistor").innerHTML = "Resistor de " + (parseFloat(valor1 + valor2) * valor3).toFixed(3).replace(/\.?0+$/, '')  + " Ω" + valor4
     }
 
+}
+
+/* =========== Calculadora IMC =========== */
+
+function calcularIMC() {
+    
+    /* ========== Associação HTML -> JS ========== */
+
+    var altura = document.getElementById("alturaimc").value
+    var peso = document.getElementById("pesoimc").value
+
+    /* ========== Cálculo ========== */
+
+    var imccalculado = 0
+    var imcclassificacao = ""
+
+    if(altura == "" || peso == "") {
+        document.getElementById("imccalculado").innerHTML = "ERRO"
+        document.getElementById("imcclassificacao").innerHTML = "ERRO"
+    } else {
+        altura = parseFloat(altura)
+        peso = parseFloat(peso)
+
+        imccalculado = (peso)/(altura * altura)
+
+        if(imccalculado < 18.5){
+            imcclassificacao = "MAGREZA"
+            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
+        } else if(imccalculado >= 18.5 && imccalculado <= 24.9) {
+            imcclassificacao = "NORMAL"
+            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
+        } else if(imccalculado >= 25 && imccalculado <= 29.9) {
+            imcclassificacao = "SOBREPESO"
+            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
+        } else if(imccalculado >= 30 && imccalculado <= 39.9) {
+            imcclassificacao = "OBESIDADE"
+            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
+        } else if(imccalculado > 40) {
+            imcclassificacao = "OBESIDADE GRAVE"
+            document.getElementById("imcclassificacao").innerHTML = imcclassificacao
+        } else {
+            document.getElementById("imcclassificacao").innerHTML = "ERRO"
+        }
+        document.getElementById("imccalculado").innerHTML = imccalculado.toFixed(1)
+    }
+
+    /* ========== Impressão ========== */
+
+    console.log("imccalculado = " + imccalculado + " (" + typeof imccalculado + ")")
+    console.log("imcclassificacao = " + imcclassificacao + " (" + typeof imcclassificacao + ")")
+}
+
+function apagarIMC() {
+    document.getElementById('alturaimc').value = ''
+    document.getElementById('pesoimc').value = ''
+}
+
+/* =========== Calculadora Pace =========== */
+
+function calcularPace() {
+
+    /* ========== Associação HTML -> JS ========== */
+
+    var distancia = document.getElementById("disctanciapace").value
+    var hora = document.getElementById("horapace").value
+    var minuto = document.getElementById("minutopace").value
+    var segundo = document.getElementById("segundopace").value
+
+    /* ========== Cálculo ========== */
+
+    var tempo = 0
+    var pace = 0
+    var decimal = 0
+    var velocidademedia = 0
+
+    if(distancia == "") {
+        document.getElementById("pacecalculado").innerHTML = "Pace: ERRO"
+        document.getElementById("velocidademediacalculado").innerHTML = "Velocidade media: ERRO"
+    } else {
+        distancia = parseFloat(distancia)
+        hora = parseFloat(hora)
+        minuto = parseFloat(minuto)
+        segundo = parseFloat(segundo)
+
+        tempo = (hora * 60) + (minuto) + (segundo / 60) // Convertendo todo tempo para minutos
+
+        pace = tempo / distancia // Calculando o pace
+        decimal = (pace % 1) * 0.6 // Convertendo a parte decimal para segundos
+        pace = Math.floor(pace) + decimal // Pace final
+
+        velocidademedia = distancia / (tempo / 60) // Calculando a velocidade media (tempo em horas)
+        
+        var partes = String(pace.toFixed(2)).split(".") // Separando a parte inteira da decimal para imprimir com ':'
+
+        /* ========== Impressão ========== */
+        document.getElementById("pacecalculado").innerHTML = "Pace: " + partes[0] + ":" + partes[1] + " min/km"
+        document.getElementById("velocidademediacalculado").innerHTML = "Velocidade media: " + velocidademedia.toFixed(1) + " km/h"
+    }
+
+    /* ========== Impressão no Console ========== */
+
+    console.clear()
+    console.log("distancia = "        + distancia       + " (" + typeof distancia       + ")")
+    console.log("hora = "             + hora            + " (" + typeof hora            + ")")
+    console.log("minuto = "           + minuto          + " (" + typeof minuto          + ")")
+    console.log("segundo = "          + segundo         + " (" + typeof segundo         + ")")
+    console.log("tempo = "            + tempo           + " (" + typeof tempo           + ")")
+    console.log("PACE = "             + pace            + " (" + typeof pace            + ")")
+    console.log("decimal = "          + decimal         + " (" + typeof decimal         + ")")
+    console.log("VELOCIDADE MEDIA = " + velocidademedia + " (" + typeof velocidademedia + ")")
+}
+
+function apagarPace() {
+    document.getElementById('disctanciapace').value = ''
+    document.getElementById('horapace').value = ''
+    document.getElementById('minutopace').value = ''
+    document.getElementById('segundopace').value = ''
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Pace | LPC </title>
+    <!-- ========== CSS ========== -->  
+    <link rel="stylesheet" href="../css/estilo-calculadora.css">
+    <link rel="icon" href="../../assets/iconcalculadora2.png">
+</head>
+
+<body>
+   <div class="areapace">
+        <div class="areacalculo-pace">
+            <div class="linha-pace linha1-pace">
+                <p class="nomepace-1">Distância (km):</p>
+                <p class="nomepace-2">Tempo Total:</p>
+            </div>
+            
+            <div class="linha-pace linha2-pace">
+                <input class="entradapace-1" type="number" min="0" max="100" placeholder="Kilometros" id="disctanciapace" required>
+                <input class="entradapace-2" type="number" min="0" max="100" placeholder="Horas" id="horapace" required>
+                <input class="entradapace-3" type="number" min="0" max="60" placeholder="Minutos" id="minutopace" required>
+                <input class="entradapace-4" type="number" min="0" max="60" placeholder="Segundos" id="segundopace" required>
+            </div>
+            
+            <div class="linha-pace linha3-pace">
+                <p class="pacecalculado" id="pacecalculado">Pace: 0.0 min/km</p>
+                <button class="botaopace-1" type="submit" onclick="calcularPace()" data-upgraded=",MaterialButton">Calcular</button>
+            </div>
+            
+            <div class="linha-pace linha4-pace">
+                <p class="velocidademediacalculado" id="velocidademediacalculado">Velocidade Média: 0.0 km/h</p>
+                <button class="botaopace-2" type="submit" onclick="apagarPace()" data-upgraded=",MaterialButton">Limpar</button>
+            </div>
+        </div>
+
+        <div class="areaformulapace">
+            <div class="tabelavelocidade">
+                <p class="titulovelocidade">Velocidade</p>
+                <p class="valortabelapacvelocidade">7 km/h</p>
+                <p class="valortabelapacvelocidade">8 km/h</p>
+                <p class="valortabelapacvelocidade">9 km/h</p>
+                <p class="valortabelapacvelocidade">10 km/h</p>
+                <p class="valortabelapacvelocidade">11 km/h</p>
+                <p class="valortabelapacvelocidade">12 km/h</p>
+                <p class="valortabelapacvelocidade">13 km/h</p>
+                <p class="valortabelapacvelocidade">14 km/h</p>
+                <p class="valortabelapacvelocidade">15 km/h</p>
+            </div>
+
+            <div class="tabelapace">
+                <p class="titulopace">Pace</p>
+                <p class="valortabelapace">8'34"</p>
+                <p class="valortabelapace">7'30"</p>
+                <p class="valortabelapace">6'40"</p>
+                <p class="valortabelapace">6'00"</p>
+                <p class="valortabelapace">5'27"</p>
+                <p class="valortabelapace">5'00"</p>
+                <p class="valortabelapace">4'37"</p>
+                <p class="valortabelapace">4'15"</p>
+                <p class="valortabelapace">4'00"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== JavaScript ========== -->
+    <script src="../js/calculadoras.js"></script>
+</body>
+
+</html>

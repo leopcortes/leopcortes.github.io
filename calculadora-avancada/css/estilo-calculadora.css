@@ -170,6 +170,21 @@ svg {
     transform: translateY(2px);
 }
 
+.pace {
+    background-color: #ed4224;
+}
+
+.pace:hover {
+    background-color: #b1321c;
+    transform: translateY(-1px);
+}
+
+.pace:active {
+    background-color: #b1321c;
+    box-shadow: 0.5px 0.5px rgb(59, 59, 59);
+    transform: translateY(2px);
+}
+
 @media(max-width: 1400px){
     svg { 
         width: 25px;
@@ -566,7 +581,6 @@ svg {
 
 .equacao1, .equacao2, .equacao3 {
     display: grid;
-    /* grid-template-columns: 21.25% 5% 21.25% 5% 21.25% 5% 21.25%; */
     grid-template-columns: 8.65fr 3rem 8.65fr 3rem 8.65fr 3rem 8.65fr;
 }
 
@@ -863,7 +877,6 @@ input::-webkit-inner-spin-button {
     color: rgb(33, 33, 33)
 }
 
-
 .textoformula {
     font-size: 15px;
     color: white;
@@ -879,7 +892,7 @@ input::-webkit-inner-spin-button {
 
 .tabelaformula {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     font-size: 14px;
 }
 
@@ -1935,4 +1948,240 @@ input::-webkit-inner-spin-button {
         display: none;
     }
 
+}
+
+/* ========== Calculadora Pace ==========  */
+
+.areapace {
+    position: fixed;
+    overflow: auto;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: 590px;
+    height: 380px;
+    padding: 15px;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    border-radius: 7px;
+}
+
+.areacalculo-pace {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+}
+
+.linha1-pace {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+}
+
+.linha2-pace {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.linha3-pace, .linha4-pace {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+}
+
+.linha4-pace {
+    padding-bottom: 3px;
+    box-shadow: 0px 2px 0px 0px rgba(11, 11, 11, 0.3);
+}
+
+.nomepace-1, .nomepace-2 {
+    font-size: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.nomepace-1 {
+    margin-right: 60px;
+}
+
+.nomepace-2 {
+    margin-right: 60px;
+}
+
+.entradapace-1, .entradapace-2, .entradapace-3, .entradapace-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: left;
+    justify-self: left;
+    width: 95%;
+    padding: 7px 0;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+}
+
+.entradapace-1 {
+    width: 85%;
+}
+
+.pacecalculado, .velocidademediacalculado {
+    font-size: 1.9rem;
+}
+
+.pacecalculado {
+    margin-top: 8px;
+}
+
+.botaopace-1, .botaopace-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: right;
+    justify-self: right;
+    width: 80%;
+    padding: 7px 0;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(59, 59, 59);
+    -webkit-box-shadow: 0 0 7px rgb(7, 7, 7);
+    box-shadow: 0 0 7px rgb(7, 7, 7);
+    text-decoration: none;
+}
+
+.botaopace-1 {
+    background-color: #194b8c;
+}
+
+.botaopace-2 {
+    background-color: #d64705;
+}
+
+.botaopace-1:hover {
+    background-color: #0f3566;
+    transform: translateY(-1px);
+}
+
+.botaopace-2:hover {
+    background-color: #ad3a04;
+    transform: translateY(-1px);
+}
+
+.botaopace-1:active {
+    background-color: #0f3566;
+    transform: translateY(1px);
+}
+
+.botaopace-2:active {
+    background-color: #ad3a04;
+    transform: translateY(1px);
+}
+
+.areaformulapace {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.titulovelocidade, .titulopace {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 1px 0px 0px rgba(11, 11, 11, 0.3);
+}
+
+.valortabelapace, .titulopace {
+    text-align: right;
+}
+
+.valortabelapacvelocidade, .valortabelapace {
+    box-shadow: 0px 1px 0px 0px rgba(11, 11, 11, 0.3);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+    .areapace {
+        width: 450px;
+        height: 375px;
+    }
+
+    .nomepace-1, .nomepace-2 {
+        font-size: 1.1rem;
+    }
+
+    .nomepace-1 {
+        margin-right: 30px;
+    }
+
+    .nomepace-2 {
+        margin-right: 40px;
+    }
+
+    .entradapace-1, .entradapace-2, .entradapace-3, .entradapace-4 {
+        font-size: 1rem;
+    }
+
+    .pacecalculado {
+        font-size: 22px;
+        margin-top: 16px;
+    } 
+
+    .velocidademediacalculado {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .areapace {
+        width: 300px;
+        height: 350px;
+    }
+
+    .nomepace-1, .nomepace-2 {
+        font-size: 0.8rem;
+    }
+
+    .nomepace-1 {
+        margin-right: 15px;
+    }
+
+    .nomepace-2 {
+        margin-right: 20px;
+    }
+
+    .entradapace-1, .entradapace-2, .entradapace-3, .entradapace-4 {
+        font-size: 0.9rem;
+    }
+
+    .pacecalculado {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    } 
+    
+    .velocidademediacalculado {
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+
+    .botaopace-1, .botaopace-2 {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .titulovelocidade, .titulopace {
+        font-size: 0.9rem;
+    }
+
+    .valortabelapacvelocidade, .valortabelapace {
+        font-size: 0.8rem;
+    }
 }
