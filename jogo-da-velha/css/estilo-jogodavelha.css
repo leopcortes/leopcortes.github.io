@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Glirock';
+    src: url('../../assets/fonts/Glirock/Glirock-Regular.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #f5b92e;
+    --celulas-vencedoras: #212f36;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Glirock', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #232b30;
+}
+
+#campo {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.celula {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 90px;
+    color: var(--orange);
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.celula:nth-child(3n) {
+    border-right: none;
+}
+
+.celula:nth-child(6) ~ .celula {
+    border-bottom: none;
+} 
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border-color: var(--orange);
+    color: #333;
+    background-color: var(--orange);
+    transition: 200ms transform;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: #d3a843;
+}
