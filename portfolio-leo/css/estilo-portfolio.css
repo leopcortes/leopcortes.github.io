@@ -12,7 +12,7 @@
     --tom-1: 0; /* branco */
     --tom-2: 166; /* verde claro */
     --tom-3: 213; /* cinza */
-    --tom-4: 216; /* azul escuro (fundo) */
+    --tom-4: 216; /* azul escuro (fundo) - #273469 azul bonito */
     --cor-principal-2: hsl(var(--tom-2), 76%, 40%);
     --cor-principal-escuro-2: hsl(var(--tom-2), 56%, 31%);
     --cor-principal-3: hsl(var(--tom-3), 72%, 28%);
