@@ -609,7 +609,7 @@ body.open .hamburguer .bar:last-child {
 .conquistas {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
     justify-content: flex-start;
@@ -1145,12 +1145,28 @@ footer .redes-sociais p {
 
 /* ================ Experiências ================ */
 
-.faculdade2 {
-    height: 750px;
+.struct {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.container-strut {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem-futeblog {
+    height: 302px;
+    width: 375px;
+    margin: 2em;
+}
+
+.imagem-carousel {
+    height: 267px;
+    width: 375px;
+    margin: 2em;
 }
 
 /* ================ Cursos ================ */
