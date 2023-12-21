@@ -96,10 +96,6 @@ html, body #fullheight {
    padding: 8px;
 }
 
-.area-jogodavelha {
-   padding: 8px;
-}
-
 .botao {
    position: relative;
    display: inline-block;
@@ -298,18 +294,6 @@ a:hover span:nth-child(4) {
    background-color: #606582;
 }
 
-.jogodavelha {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 43px;
-   background-color: #f5b92e;
-}
-
-.jogodavelha:active {
-   background-color: #d3a843;
-}
-
 @media (max-width: 660px) {
    .nome {
       width: 430px;
@@ -331,11 +315,6 @@ a:hover span:nth-child(4) {
    }
    
    .portfolio {
-      font-size: 32px;
-      line-height: 32px;
-   }
-   
-   .jogodavelha {
       font-size: 32px;
       line-height: 32px;
    }
@@ -366,11 +345,6 @@ a:hover span:nth-child(4) {
    }
    
    .portfolio {
-      font-size: 32px;
-      line-height: 32px;
-   }
-   
-   .jogodavelha {
       font-size: 32px;
       line-height: 32px;
    }
@@ -407,11 +381,6 @@ a:hover span:nth-child(4) {
    }
    
    .portfolio {
-      font-size: 26px;
-      line-height: 26px;
-   }
-   
-   .jogodavelha {
       font-size: 26px;
       line-height: 26px;
    }
