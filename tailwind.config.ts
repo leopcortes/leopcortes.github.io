@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+        abril_fatface: ["Abril Fatface", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        lexend: ["Lexend", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -64,5 +67,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 } satisfies Config;

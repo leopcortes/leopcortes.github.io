@@ -1,18 +1,13 @@
 import "~/styles/globals.css";
 
-import { Roboto } from "next/font/google";
-
 import { Toaster } from "~/components/ui/toaster";
-import { cn } from "~/lib/utils";
 import { TRPCReactProvider } from "~/trpc/react";
 
 export const metadata = {
   title: "Leonardo P. Côrtes",
   description: "Portfólio de Leonardo Pereira Côrtes",
-  icons: [{ rel: "icon", url: "/iconleopcortes.jpg" }],
+  icons: [{ rel: "icon", url: "/L2.jpg" }],
 };
-
-const font = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function RootLayout({
   children,
@@ -20,14 +15,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={cn(font.className, "antialiased")}>
+    <html lang="pt-BR">
       <body>
         <TRPCReactProvider>
           <div
-            className="mx-auto"
-            style={{
-              width: "min(1400px,100%)",
-            }}
+            className="font-lexend mx-auto text-texto_principal"
+            style={
+              {
+                // width: "min(1400px,100%)",
+              }
+            }
           >
             {children}
           </div>
