@@ -12,9 +12,9 @@ export default function Contato() {
   return (
     <div
       className="mx-96 mb-16 grid grid-cols-[1.05fr_0.8fr] justify-between gap-8"
-      id="#contatos"
+      id="contatos"
     >
-      <div className="contatos-info">
+      <div>
         <h3 className="leading-3.5 mb-3 border-l-[3px] border-azul_principal px-3 py-[0.2rem] text-[0.85rem] font-medium uppercase tracking-[0.5px] text-verde_principal transition duration-300">
           Contate-me
         </h3>
