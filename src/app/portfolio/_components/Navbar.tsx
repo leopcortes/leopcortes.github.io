@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="fixed left-0 top-0 z-50 flex h-20 w-full justify-center transition duration-300">
+    <div className="fixed left-0 top-0 z-50 flex h-20 w-full justify-center bg-white/5 backdrop-blur-lg transition duration-300">
       <nav className="flex flex-wrap items-center">
         <a
           href="#"

@@ -21,8 +21,10 @@ export default {
         texto_principal: "#e5f0ff",
         texto_secundario: "#8b97a7",
         verde_principal: "#12bf97",
-        verde_hover: "#11b38d",
+        verde_hover: "#237b66",
         azul_principal: "#679fe4",
+        fundo_azul_1: "#081426",
+        fundo_azul_2: "#0a1d38",
 
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
