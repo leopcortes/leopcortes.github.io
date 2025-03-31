@@ -7,9 +7,9 @@ import { cn } from "~/lib/utils";
 import { TRPCReactProvider } from "~/trpc/react";
 
 export const metadata = {
-  title: "Leonardo Pereira",
-  description: "Portfólio de Leonardo Pereira",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  title: "Leonardo P. Côrtes",
+  description: "Portfólio de Leonardo Pereira Côrtes",
+  icons: [{ rel: "icon", url: "/iconleopcortes.jpg" }],
 };
 
 const font = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
