@@ -1,6 +1,6 @@
 "use client";
-
 import Image from "next/image";
+import { Element } from "react-scroll";
 
 export default function Inicio() {
   const baixarPdf = () => {
@@ -13,7 +13,7 @@ export default function Inicio() {
   };
 
   return (
-    <div className="relative w-full overflow-hidden" id="inicio">
+    <Element className="relative w-full overflow-hidden" name="inicio">
       <div className="flex flex-row justify-between gap-8">
         <div className="flex flex-col gap-2">
           {/* <h3 className="leading-3.5 mb-3 border-l-[3px] border-azul_principal px-3 py-[0.2rem] text-[0.85rem] font-medium uppercase tracking-[0.5px] text-verde_principal transition duration-300">
@@ -38,7 +38,7 @@ export default function Inicio() {
           </div>
         </div>
 
-        <div className="mb-4 flex items-center">
+        <div className="flex items-center">
           {/* <div className="h-48 w-48 rounded-full bg-texto_principal"></div> */}
           <Image
             width={192}
@@ -49,6 +49,6 @@ export default function Inicio() {
           />
         </div>
       </div>
-    </div>
+    </Element>
   );
 }

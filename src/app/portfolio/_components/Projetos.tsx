@@ -1,3 +1,5 @@
+"use client";
+import { Element } from "react-scroll";
 import {
   Carousel,
   CarouselContent,
@@ -8,7 +10,7 @@ import {
 
 export default function Projetos() {
   return (
-    <div className="mb-16 flex flex-col gap-8" id="projetos">
+    <Element className="flex flex-col gap-8" name="projetos">
       <div>
         <h3 className="leading-3.5 mb-3 border-l-[3px] border-azul_principal px-3 py-[0.2rem] text-[0.85rem] font-medium uppercase tracking-[0.5px] text-verde_principal transition duration-300">
           Projetos
@@ -157,6 +159,6 @@ export default function Projetos() {
         <CarouselPrevious className="border-none bg-fundo_azul_2 text-white" />
         <CarouselNext className="border-none bg-fundo_azul_2 text-white" />
       </Carousel>
-    </div>
+    </Element>
   );
 }

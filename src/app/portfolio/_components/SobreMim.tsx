@@ -1,3 +1,6 @@
+"use client";
+import { Element } from "react-scroll";
+
 export default function SobreMim() {
   const calcularIdade = (dataNascimento: string): number => {
     const nascimento = new Date(dataNascimento);
@@ -20,9 +23,9 @@ export default function SobreMim() {
   const idade = calcularIdade("2001-09-01");
 
   return (
-    <div
+    <Element
       className="relative w-full justify-center overflow-hidden"
-      id="sobremim"
+      name="sobremim"
     >
       <div className="flex flex-row items-center justify-center gap-16 rounded-[32px] bg-fundo_azul_2 p-12">
         <div>
@@ -56,9 +59,6 @@ export default function SobreMim() {
           </p>
         </div>
       </div>
-    </div>
+    </Element>
   );
-}
-{
-  /*  */
 }

@@ -1,8 +1,10 @@
+"use client";
 import { Calendar, MapPin } from "lucide-react";
+import { Element } from "react-scroll";
 
 export default function Experiencias() {
   return (
-    <div className="flex flex-col gap-8" id="experiencias">
+    <Element className="flex flex-col gap-8" name="experiencias">
       <div>
         <h3 className="leading-3.5 mb-3 border-l-[3px] border-azul_principal px-3 py-[0.2rem] text-[0.85rem] font-medium uppercase tracking-[0.5px] text-verde_principal transition duration-300">
           Experiências
@@ -19,7 +21,7 @@ export default function Experiencias() {
           conceitos nas áreas necessárias.
         </p> */}
 
-        <div className="mt-8 flex justify-between gap-8 border-b-[2px] border-b-fundo_azul_2 pb-4">
+        <div className="mt-8 flex justify-between gap-8 border-b-[2px] border-b-fundo_azul_2 pb-2">
           <div className="flex flex-col gap-2">
             <p className="font-lexend text-2xl">
               Struct Empresa Júnior de Engenharia da Computação
@@ -75,6 +77,6 @@ export default function Experiencias() {
           </div>
         </div> */}
       </div>
-    </div>
+    </Element>
   );
 }

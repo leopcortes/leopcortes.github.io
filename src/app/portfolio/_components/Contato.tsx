@@ -1,5 +1,6 @@
 "use client";
 import { ArrowRight, ClipboardCopy } from "lucide-react";
+import { Element } from "react-scroll";
 
 export default function Contato() {
   const copyToClipboard = (text: string) => {
@@ -10,9 +11,9 @@ export default function Contato() {
   };
 
   return (
-    <div
+    <Element
       className="grid grid-cols-[1.05fr_0.8fr] justify-between gap-8"
-      id="contatos"
+      name="contatos"
     >
       <div>
         <h3 className="leading-3.5 mb-3 border-l-[3px] border-azul_principal px-3 py-[0.2rem] text-[0.85rem] font-medium uppercase tracking-[0.5px] text-verde_principal transition duration-300">
@@ -113,6 +114,6 @@ export default function Contato() {
           </a>
         </ul>
       </div>
-    </div>
+    </Element>
   );
 }

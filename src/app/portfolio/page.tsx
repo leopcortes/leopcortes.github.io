@@ -12,7 +12,7 @@ export default function Portfolio() {
       <Navbar />
       <div className="mb-32 mt-[140px] grid grid-cols-9 gap-4 lg:grid-cols-5">
         <div className="col-span-1"></div>
-        <div className="col-span-7 flex flex-col gap-28 lg:col-span-3">
+        <div className="col-span-7 flex flex-col gap-32 lg:col-span-3">
           <Inicio />
           <SobreMim />
           <Projetos />
