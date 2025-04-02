@@ -35,16 +35,14 @@ export default function Contato() {
       <div className="flex h-full items-center pt-16">
         <ul className="flex flex-col gap-1">
           <a
-            href="#contatos"
+            onClick={() => copyToClipboard("leo.pereira.cortes@gmail.com")}
             className="group flex cursor-pointer items-center gap-2 text-[1.1rem] font-medium text-verde_principal transition duration-300 ease-in-out hover:text-verde_hover"
           >
-            <span>
-              email{" "}
-              <span className="hidden group-hover:inline">
-                - leo.pereira.cortes@gmail.com
-              </span>
+            email{" "}
+            <span className="hidden group-hover:inline">
+              - leo.pereira.cortes@gmail.com
             </span>
-            <ArrowRight
+            <ClipboardCopy
               size={20}
               className="transition-transform duration-300 ease-in-out group-hover:translate-x-[5px]"
             />
