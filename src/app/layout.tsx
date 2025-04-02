@@ -6,7 +6,7 @@ import { TRPCReactProvider } from "~/trpc/react";
 export const metadata = {
   title: "Leonardo P. Côrtes",
   description: "Portfólio de Leonardo Pereira Côrtes",
-  icons: [{ rel: "icon", url: "/L2.jpg" }],
+  icons: [{ rel: "icon", url: "/L2.png" }],
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <TRPCReactProvider>
           <div
-            className="font-lexend mx-auto text-texto_principal"
+            className="mx-auto font-lexend text-texto_principal"
             style={
               {
                 // width: "min(1400px,100%)",
