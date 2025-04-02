@@ -1,12 +1,21 @@
 "use client";
 import { ArrowRight, ClipboardCopy } from "lucide-react";
 import { Element } from "react-scroll";
+import { useToast } from "~/hooks/use-toast";
 
 export default function Contato() {
+  const { toast } = useToast();
+
   const copyToClipboard = (text: string) => {
     navigator.clipboard
       .writeText(text)
-      .then(() => console.log("Copiado para a área de transferência!"))
+      .then(() => {
+        toast({
+          description: "Copiado para área de transferência.",
+          className: "font-lexend",
+          duration: 2500,
+        });
+      })
       .catch((err) => console.error("Erro ao copiar: ", err));
   };
 
