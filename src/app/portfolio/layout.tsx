@@ -15,20 +15,18 @@ export default function PortfolioLayout({
   children: React.ReactNode;
 }) {
   return (
-    <body>
-      <TRPCReactProvider>
-        <div
-          className="font-poppins mx-auto text-texto_principal"
-          style={
-            {
-              // width: "min(1400px,100%)",
-            }
+    <TRPCReactProvider>
+      <div
+        className="mx-auto font-poppins text-texto_principal"
+        style={
+          {
+            // width: "min(1400px,100%)",
           }
-        >
-          {children}
-        </div>
-        <Toaster />
-      </TRPCReactProvider>
-    </body>
+        }
+      >
+        {children}
+      </div>
+      <Toaster />
+    </TRPCReactProvider>
   );
 }

@@ -11,7 +11,7 @@ export default function Contato() {
 
   return (
     <div
-      className="mx-96 mb-16 grid grid-cols-[1.05fr_0.8fr] justify-between gap-8"
+      className="mx-48 mb-16 grid grid-cols-[1.05fr_0.8fr] justify-between gap-8 lg:mx-64 xl:mx-96"
       id="contatos"
     >
       <div>
@@ -19,7 +19,7 @@ export default function Contato() {
           Contate-me
         </h3>
 
-        <h1 className="font-abril_fatface leading-20 text-[2.5rem] font-normal text-texto_principal transition duration-300">
+        <h1 className="leading-20 font-abril_fatface text-[2.5rem] font-normal text-texto_principal transition duration-300">
           Vamos trabalhar juntos
         </h1>
 

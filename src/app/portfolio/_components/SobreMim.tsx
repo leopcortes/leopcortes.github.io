@@ -24,13 +24,13 @@ export default function SobreMim() {
       className="relative w-full justify-center overflow-hidden"
       id="sobremim"
     >
-      <div className="bg-fundo_azul_2 mx-96 flex flex-row items-center justify-center gap-16 rounded-[32px] p-12">
+      <div className="mx-48 flex flex-row items-center justify-center gap-16 rounded-[32px] bg-fundo_azul_2 p-12 lg:mx-64 xl:mx-96">
         <div>
           <h3 className="leading-3.5 mb-3 border-l-[3px] border-azul_principal px-3 py-[0.2rem] text-[0.85rem] font-medium uppercase tracking-[0.5px] text-verde_principal transition duration-300">
             SOBRE MIM E SKILLS
           </h3>
 
-          <h1 className="font-abril_fatface leading-20 text-[2.5rem] font-normal text-texto_principal transition duration-300">
+          <h1 className="leading-20 font-abril_fatface text-[2.5rem] font-normal text-texto_principal transition duration-300">
             Como posso ajudar sua empresa
           </h1>
 
