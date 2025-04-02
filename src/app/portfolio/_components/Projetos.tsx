@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Card, CardContent } from "~/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -10,10 +8,7 @@ import {
 
 export default function Projetos() {
   return (
-    <div
-      className="mx-48 mb-16 flex flex-col gap-8 lg:mx-64 xl:mx-96"
-      id="projetos"
-    >
+    <div className="mb-16 flex flex-col gap-8" id="projetos">
       <div>
         <h3 className="leading-3.5 mb-3 border-l-[3px] border-azul_principal px-3 py-[0.2rem] text-[0.85rem] font-medium uppercase tracking-[0.5px] text-verde_principal transition duration-300">
           Projetos

@@ -74,3 +74,19 @@
   background-color: hsla(0, 100%, 60%, 0.75);
   color: white;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252e3cc5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3444;
+}

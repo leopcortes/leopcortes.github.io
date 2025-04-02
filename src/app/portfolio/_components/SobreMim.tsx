@@ -24,7 +24,7 @@ export default function SobreMim() {
       className="relative w-full justify-center overflow-hidden"
       id="sobremim"
     >
-      <div className="mx-48 flex flex-row items-center justify-center gap-16 rounded-[32px] bg-fundo_azul_2 p-12 lg:mx-64 xl:mx-96">
+      <div className="flex flex-row items-center justify-center gap-16 rounded-[32px] bg-fundo_azul_2 p-12">
         <div>
           <h3 className="leading-3.5 mb-3 border-l-[3px] border-azul_principal px-3 py-[0.2rem] text-[0.85rem] font-medium uppercase tracking-[0.5px] text-verde_principal transition duration-300">
             SOBRE MIM E SKILLS

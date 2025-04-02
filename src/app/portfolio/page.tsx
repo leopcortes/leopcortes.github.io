@@ -9,14 +9,17 @@ import SobreMim from "./_components/SobreMim";
 export default function Portfolio() {
   return (
     <div className="flex h-full flex-col bg-fundo_azul_1 text-texto_principal">
-      {/* <div className="pointer-events-none fixed top-0 left-0 z-10 h-[100vh] w-[100vw] bg-black/70 opacity-0 transition duration-300"></div> */}
       <Navbar />
-      <div className="mt-[140px] flex flex-col gap-[70px]">
-        <Inicio />
-        <SobreMim />
-        <Projetos />
-        <Experiencias />
-        <Contato />
+      <div className="mb-32 mt-[140px] grid grid-cols-9 gap-4 lg:grid-cols-5">
+        <div className="col-span-1"></div>
+        <div className="col-span-7 flex flex-col gap-28 lg:col-span-3">
+          <Inicio />
+          <SobreMim />
+          <Projetos />
+          <Experiencias />
+          <Contato />
+        </div>
+        <div className="col-span-1"></div>
       </div>
       <Footer />
     </div>

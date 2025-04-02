@@ -11,7 +11,7 @@ export default function Contato() {
 
   return (
     <div
-      className="mx-48 mb-16 grid grid-cols-[1.05fr_0.8fr] justify-between gap-8 lg:mx-64 xl:mx-96"
+      className="grid grid-cols-[1.05fr_0.8fr] justify-between gap-8"
       id="contatos"
     >
       <div>
